@@ -135,3 +135,62 @@ form.criar-conta input[type=submit]{
   max-width: 200px;
   font-size: 18px;
 }
+
+form .w100 h2{
+    margin-top: 10px;
+    color: #1d2129;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+form select.nascimento{
+    float: left;
+    margin-top: 5px;
+}
+
+.input-radio{
+    margin: 8px 10px;
+    float:left;
+}
+
+.input-radio h2{
+    display: inline-block;
+}
+
+.input-radio input[type="radio"]{
+    width: auto!important;
+    display: inline-block;
+}
+
+section.linguas{
+    padding: 30px 0;
+    background-color: white;
+}
+
+section.linguas a{
+    font-size: 10px;
+    padding-right: 15px;
+    color: #365899;
+    text-decoration: none;
+}
+
+section.linguas .center{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.linguas a.selected-lingua{
+    color: #737373;
+}
+
+.center-2 {
+    style ="border:0";
+    padding-top: 10px;
+    max-width: 1024px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}

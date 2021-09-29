@@ -1,82 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Login Facebook</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Descrição do Site."/>
-    <meta name="keywords" content="Facebook, Login Facebook" />
-    <meta name="author" content="Valcimar Costa"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet"/>
-  </head>
+        <head>
+            <title>Login Facebook</title>
+            <meta charset="utf-8">
+            <meta name="description" content="Descrição do Site."/>
+            <meta name="keywords" content="Facebook, Login Facebook" />
+            <meta name="author" content="Valcimar Costa"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
+            <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        </head>
 
-  <body>
+        <body>
 
-    <header>
-      <div class="center">
-        <div class="logo">
-          <h2>Facebook</h2>
-        </div><!--logo-->
+            <header>
+                <div class="center">
+                    <div class="logo">
+                        <h2>Facebook</h2>
+                    </div><!--logo-->
 
-        <form class="form-login" method="post">
-          <div class="form-element">
-            <p>Email ou telefone</p>
-            <input type="email" placeholder="Informe seu email ou telefone"/>
-          </div><!--form-element-->
+                    <form class="form-login" method="post">
+                        <div class="form-element">
+                            <p>Email ou telefone</p>
+                            <input type="email" placeholder="Informe seu email ou telefone" />
+                        </div><!--form-element-->
 
-          <div class="form-element">
-            <p>Senha</p>
-            <input type="password" placeholder="Insira sua senha"/>
-          </div><!--form-element-->
+                        <div class="form-element">
+                            <p>Senha</p>
+                            <input type="password" placeholder="Insira sua senha" />
+                        </div><!--form-element-->
 
-          <div class="form-element">
-            <input type="submit" name="acao" value="Enviar"/>
-          </div><!--form-element-->
-        </form><!--form-loging-->
-        <div class="clear"></div><!--Limpar-->
-      </div><!--center-->
-    </header>
+                        <div class="form-element">
+                            <input type="submit" name="acao" value="Enviar" />
+                        </div><!--form-element-->
+                    </form><!--form-loging-->
 
-    <section class="main">
-      <div class="center">
-        <div class="img-pessoa">
-          <img src="images\pessoa.png">
-        </div><!--img-pessoa-->
+                    <div class="clear"></div><!--Limpar-->
+                </div><!--center-->
+            </header>
 
-        <div class="abrir-conta">
-          <h2>Abra sua conta</h2>
-          <h3>É gratuito e sempre será!</h3>
+            <section class="main">
+                <div class="center">
+                    <div class="img-pessoa">
+                        <img src="images\pessoa.png">
+                    </div><!--img-pessoa-->
 
-          <form class="criar-conta">
-            <div class="w50">
-              <input placeholder="Nome" type="text"/>
-            </div><!--w50-->
+                    <div class="abrir-conta">
+                        <h2>Abra sua conta</h2>
+                        <h3>É gratuito e sempre será!</h3>
 
-            <div class="w50">
-              <input placeholder="Sobrenome" type="text"/>
-            </div><!--w50-->
+                        <form class="criar-conta">
+                            <div class="w50">
+                                <input placeholder="Nome" type="text" />
+                            </div><!--w50-->
 
-            <div class="w100">
-              <input placeholder="Email" type="email"/>
-            </div><!--w100-->
+                            <div class="w50">
+                                <input placeholder="Sobrenome" type="text" />
+                            </div><!--w50-->
 
-            <div class="w100">
-              <input placeholder="Senha" type="password"/>
-            </div><!--w100-->
+                            <div class="w100">
+                                <input placeholder="Email" type="email" />
+                            </div><!--w100-->
 
-            <div class="w100">
-              <input placeholder="Cadastre-se" type="submit" name="acao" value="Cadastrar"/>
-            </div><!--w100-->
+                            <div class="w100">
+                                <input placeholder="Senha" type="password" />
+                            </div><!--w100-->
 
-            <div class="clear"></div><!--Limpar-->
-          </form><!--criar-conta-->
-        </div><!--abrir-conta-->
+                            <div class="w100">
+                                <h2>Data de Nascimento</h2>
+                                <select name="nascimento-dia" class="nascimento">
+                                    <?php
+                                    for($i = 1; $i <= 31; $i++){
+                                    ?>
+                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <?php } ?>
+                                </select><!--select class nascimento name nascimento-dia-->
 
-      <div class="clear"></div><!--Limpar-->
-      </div><!--center-->
-    </section><!--main-->
+                                <select name="nascimento-mes" class="nascimento">
+                                    <?php
+                                    for($i = 1; $i <= 31; $i++){
+                                    ?>
+                                    <option value="1">Janeiro</option>
+                                    <option value="2">Fevereiro</option>
+                                    <option value="3">Março</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Maio</option>
+                                    <option value="6">Junho</option>
+                                    <option value="7">Julho</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Setembro</option>
+                                    <option value="10">Outubro</option>
+                                    <option value="11">Novembro</option>
+                                    <option value="12">Dezembro</option>
+                                    <?php } ?>
+                                </select><!--select class nascimento name nascimento-mes-->
+
+                                <select name="nascimento-ano" class="nascimento">
+                                    <?php
+                                    for($i = 1900; $i <= 2021; $i++){
+                                    ?>
+                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <?php } ?>
+                                </select><!--select class nascimento name nascimento-ano-->
+
+                                <div class="clear"></div><!--Limpar-->
+                            </div><!--w100-->
+
+                            <div class="w100">
+                                <div class="input-radio">
+                                    <input type="radio" name="sexo" value="nasculino" />
+                                    <h2>Masculino</h2>
+                                </div>
+
+                                <div class="input-radio">
+                                    <input type="radio" name="sexo" value="feminino" />
+                                    <h2>Feminino</h2>
+                                </div>
+
+                                <div class="clear"></div><!--Limpar-->
+                            </div><!--w100-->
+
+                            <div class="w100">
+                                <input placeholder="Cadastre-se" type="submit" name="acao" value="Cadastrar" />
+                            </div><!--w100-->
+
+                            <div class="clear"></div><!--Limpar-->
+                        </form><!--criar-conta-->
+                    </div><!--abrir-conta-->
+
+                    <div class="clear"></div><!--Limpar-->
+                </div><!--center-->
+            </section><!--main-->
+
+            <section class="linguas">
+                <div class="center">
+                    <a class="selected-lingua" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+                    <a class="#" href="#">Português(BR)</a>
+
+                    <div class="clear"></div><!--Limpar-->
+                </div><!--center-->
+
+                <div class="center-2">
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
+
+                    <div class="clear"></div><!--Limpar-->
+                </div><!--center-->
 
 
-  </body>
+
+            </section><!--linguas-->
+
+
+
+        </body>
 </html>
