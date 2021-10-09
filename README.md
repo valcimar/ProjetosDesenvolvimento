@@ -1,1 +1,1 @@
-Pequeno projeto de estudo recriando tela de login antiga do Facebook
+Pequeno projeto de estudo recriando tela de login antiga do Facebook. Modelo Front-End com sistema login seguro e simples.
