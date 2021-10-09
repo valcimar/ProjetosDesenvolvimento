@@ -11,7 +11,9 @@
   margin: 0 auto;
 }
 
-.clear{clear: both;}
+div.clear{
+    clear: both;
+}
 
 header{
   background: #254f94;
@@ -193,4 +195,53 @@ section.linguas a.selected-lingua{
     padding-right: 8px;
     padding-bottom: 10px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+    .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    form.form-login{
+        margin-top: 17px;
+        display: inline-block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-login .form-element {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .form-element p {
+        color: white;
+        font-size: 12px;
+    }
+
+    .form-element input[type=email],
+    .form-element input[type=password] {
+        margin-top: 4px;
+        border: 0;
+        height: 18px;
+        padding-left: 3px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .form-element input[type=submit]{
+        width: 140px;
+    }
+
+   .img-pessoa{
+       display: none;
+   }
+
+   .abrir-conta{
+       width: 100%;
+       margin-left: 10px;
+   }
 }
