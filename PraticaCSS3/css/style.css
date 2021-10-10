@@ -5,15 +5,136 @@
     font-family: "Open Sans"
 }
 
-div.box{
+div.box {
     width: 300px;
     height: 300px;
     background-color: green;
     transition: 2.5s;
+    margin-top: 20px;
 }
 
 div.box:hover{
     width: 600px;
     height: 150px;
     background-color: red;
+}
+
+form.formulario input{
+    margin-top: 20px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ccc;
+    transition: 1.5s;
+}
+
+form.formulario input:focus{
+    width: 300px;
+}
+
+div.box2 {
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+div.box2:hover {
+    animation-name: animacao_1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes animacao_1{
+    0%/*from*/{
+        background-color: yellow;
+        left: 25px;
+    }
+    25%{
+        background-color:aqua;
+        left: 50px;
+        top: 15px;
+    }
+    50%{
+        background-color:brown;
+        left: 100px;
+        top: 45px;
+    }
+    75%{
+        background-color:crimson;
+        left: 75px;
+        top: 15px;
+    }
+    100%/*to*/{
+        background-color:blueviolet;
+        left:25px;
+        top: 0px;
+    }
+}
+
+div.box3 {
+    margin-top: 40px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+div.box3 img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+div.box3 p{
+    padding: 150px 90px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: antiquewhite;
+    transition: 1s;
+}
+
+div.box3 p:hover{
+    opacity: 0.6;
+}
+
+div.box4 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+div.box4 img {
+    width: 40%;
+    animation-name: animacao_2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    box-shadow: 15px 15px 15px 0px rgb(230,230,230);
+}
+
+@keyframes animacao_2 {
+    0% {
+        box-shadow: 15px 15px 15px 0px rgb(130,130,130);
+    }
+    20% {
+        box-shadow: 5px 5px 5px 5px rgb(180,180,180);
+    }
+    40% {
+        box-shadow: 15px 15px 15px 10px rgb(180,180,180);
+    }
+    60% {
+        box-shadow: 15px 15px 15px 5px rgb(180,180,180);
+    }
+    80% {
+        box-shadow: 15px 15px 15px 10px rgb(180,180,180);
+    }
+    100% {
+        box-shadow: 15px 15px 15px 15px rgb(180,180,180);
+    }
 }
