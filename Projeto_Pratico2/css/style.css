@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .clear{
@@ -12,16 +13,17 @@ html, body {
     height: 100%;
 }
 
-.conteiner{
+.conteiner {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*Até aqui Divs Gerais*/
 
 header {
-    background-color: #D6D6D6;
-    padding: 10px 2% 30px 2%;
+    background-color: #c7c5c1;
+    padding: 10px 2% 40px 2%;
 }
 
 .logo_1{
@@ -64,7 +66,9 @@ section.cover-form{
     width: 400px;
     height: 110%;
     top: -5%;
+    z-index: 2;
     position: relative;
+    box-shadow: 1px 1px 1px 1px rgb(180, 180, 180);
     background-color: white;
 }
 
@@ -86,7 +90,11 @@ section.cover-form{
     color: #525252;
 }
 
-.form-wraper{
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
     margin-top: 20px;
 }
 
@@ -98,7 +106,17 @@ section.cover-form{
     padding-left: 10px;
 }
 
+.form-conteiner form input[type="submit"] {
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
 
+}
 
 @media screen and (max-width: 510px){
     
@@ -111,4 +129,39 @@ section.cover-form{
         display: inline-block;
         float: none;
     }
+}
+
+section.chamada {
+    z-index: 1;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    
+}
+
+section.chamada .conteiner {
+    background-color: #f2eee6;
+    padding: 50px 0px;
+}
+
+section.chamada h2 {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: #3e3e40;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+section.chamada p {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: #3e3e40;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
 }
