@@ -117,6 +117,23 @@ section.cover-form{
     border: 0;
 }
 
+@media screen and (max-width:768px){
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width:960px){
     
     .bg{
@@ -195,4 +212,17 @@ section.chamada p {
     margin-top: 10px;
     font-size: 18px;
     font-weight: normal;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    margin-top: 8px;
+}
+
+footer img{
+    width: 120px;
 }
