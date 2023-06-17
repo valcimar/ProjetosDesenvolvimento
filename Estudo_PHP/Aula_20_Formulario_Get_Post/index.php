@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Formulario</title>
+    <title>Formul√°rio</title>
     <meta charset="utf-8">
-    <meta name="description" content="DescriÁ„o do Site."/>
+    <meta name="description" content="Descri√ß√£o do Site."/>
     <meta name="keywords" content="palavras chaves" />
     <meta name="author" content="Autor do Site"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
@@ -13,7 +13,7 @@
   <body>
 
     <?php
-        /*//mÈtodo get
+        /*//mÔøΩtodo get
         if(isset($_GET['acao'])){
             $nome = @$_GET['nome'];
             $email = @$_GET['email'];
@@ -23,7 +23,7 @@
             echo $email;
         }
 
-        //mÈtodo post
+        //mÔøΩtodo post
         if(isset($_POST['acao'])){
             $nome = @$_POST['nome'];
             $email = @$_POST['email'];
